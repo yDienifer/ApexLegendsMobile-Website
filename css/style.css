@@ -1,0 +1,749 @@
+/* Tipografia */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Raleway:wght@500&family=Roboto:wght@300&display=swap");
+
+@font-face {
+  font-family: "Apex";
+  src: url("../font/Apex Regular.otf");
+}
+
+/* Body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-family: "Apex";
+}
+
+body {
+  background-image: url("../img/background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 350px;
+  overflow-x: hidden;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+}
+@media (max-width: 1000px) {
+  #background-home {
+    filter: brightness(0.5);
+  }
+  .home {
+    position: relative;
+    top: -30px;
+  }
+  #introducao-home {
+    padding-bottom: 70px;
+  }
+  #btn-baixar {
+    margin: 0 -27px;
+  }
+  /* Responsividade (temporada) incorreta */
+  .temporada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    margin-left: 100%;
+  }
+  #background-temporada {
+    right: 360px;
+  }
+  #titulo-temporada,
+  #introducao-temporada {
+    position: relative;
+    top: 380px;
+    width: 80%;
+  }
+  #btn-temporada {
+    position: absolute;
+    margin-top: 368px;
+    float: left;
+    margin-right: auto;
+    margin-left: 10%;
+    width: 100%;
+    z-index: 2;
+  }
+  /* Trailer */
+  .trailer {
+    position: relative;
+    top: -130px;
+    right: 99px;
+    float: left;
+  }
+  #background-trailer {
+    width: 400px;
+    position: relative;
+    top: 450px;
+    left: 0px;
+  }
+  #titulo-trailer {
+    top: 68px;
+    padding-bottom: 20px;
+  }
+  #introducao-trailer {
+    position: relative;
+    top: 0;
+    width: 50%;
+    margin-left: 52px;
+  }
+  #trailer-video {
+    display: none;
+  }
+  .botao-play,
+  .ele-wrap {
+    visibility: visible;
+  }
+  .jogueAgora {
+    position: relative;
+    top: 840px;
+    left: -10px;
+  }
+  #titulo-trailer {
+    margin-left: 260px;
+  }
+  #introducao-trailer {
+    margin-right: 45px;
+  }
+  #image-guia {
+    margin-top: 130px;
+  }
+  #titulo-guia {
+    margin-top: 30px;
+  }
+  .jogueAgora {
+    margin-top: -390px;
+  }
+  .linha {
+    margin-top: -180px;
+  }
+  #titulo-guia {
+    position: absolute;
+    top: -200px;
+    right: 50px;
+    width: 400px;
+    text-align: center;
+  }
+  #introducao-guia {
+    position: absolute;
+    top: 110px;
+    width: 400px;
+  }
+  #btn-guia {
+    margin: 108px 0 0 -108px;
+    float: left;
+    width: 100%;
+  }
+  .ultimas-noticias {
+    padding-top: 740px;
+  }
+  #titulo-noticias {
+    padding-top: 30px;
+    width: 450px;
+  }
+  #introducao-noticias {
+    padding-bottom: 60px;
+    width: 100%;
+    position: relative;
+    right: 10px;
+    text-align: center;
+  }
+  #titulo-noticias,
+  #introducao-noticias {
+    margin-left: 25px;
+  }
+  .cards {
+    position: relative;
+    left: 431px;
+  }
+  .card-2 {
+    visibility: hidden;
+  }
+  #ver-mais-noticias {
+    margin-top: 180px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 999px) {
+  .temporada { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #background-temporada {
+    margin: auto;
+  }
+  #background-trailer {
+    position: relative;
+    right: 150px;
+    width: 200px;
+  }
+  #introducao-trailer {
+    position: relative;
+    top: 58px;
+    width: 350px;
+    float: left;
+    left: 35px;
+  }
+  #titulo-trailer {
+    position: relative;
+    right: 97px;
+  }
+  #image-guia {
+    position: relative;
+    top: -600px;
+    width: 1380px;
+  }
+  #introducao-guia {
+    position: relative;
+    top: -30px;
+  }
+  #btn-guia {
+    position: relative;
+    top: -58px;
+    left: -108px;
+    float: left;
+    width: 100%;
+  }
+  .ultimas-noticias,
+  .cards {
+    position: relative;
+    top: 100px;
+  }
+  .card-3 {
+    visibility: hidden;
+  }
+  footer {
+    margin-top: 190px;
+  }
+}
+
+@media (min-width: 1000px) {
+  #ver-mais-noticias {
+    opacity: 0;
+  }
+}
+
+/* Header */
+#logo-header {
+  width: 70px;
+  margin-top: 5px;
+  position: relative;
+  top: 5px;
+  padding-left: 11px;
+}
+
+#login {
+  color: blanchedalmond;
+  padding: 7px;
+  background-color: #8e121c;
+  width: 90px;
+  margin-right: 10px;
+  text-align: center;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+#sign-up {
+  color: blanchedalmond;
+  padding: 7px;
+  background-color: #426591;
+  width: 90px;
+  margin-right: 10px;
+  text-align: center;
+  transition: all 0.5s ease;
+  opacity: 0.7;
+}
+
+#sign-up:hover,
+#login:hover {
+  opacity: 1;
+}
+
+.signUp-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: -60px;
+}
+
+/* Página inicial - Home */
+.home {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 40px;
+  margin-top: 90px;
+}
+
+#background-home {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 1370px;
+  min-width: 1100px;
+  z-index: -1;
+}
+
+.home p {
+  font-family: "Raleway", sans-serif;
+  padding: 25px;
+  width: 320px;
+  color: white;
+  text-shadow: 1px 1px 9px black;
+}
+
+.home img {
+  width: 250px;
+  margin-left: 25px;
+}
+
+#btn-baixar {
+  position: relative;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.603);
+  clip-path: polygon(0% 16%, 100% 6%, 98% 100%, 2% 90%);
+}
+
+#btn-baixar,
+#btn-temporada,
+#btn-guia {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  letter-spacing: 0.9px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+#btn-baixar,
+#btn-temporada,
+#btn-guia {
+  position: relative;
+  border: 2px solid red;
+  transition: 1s all ease;
+  padding: 17px;
+  width: 160px;
+  text-align: center;
+}
+
+#btn-baixar::before,
+#btn-temporada::before,
+#btn-guia::before {
+  background: red;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+#btn-baixar::before,
+#btn-temporada::before,
+#btn-guia::before {
+  width: 0%;
+  height: 100%;
+}
+
+#btn-baixar:hover::before,
+#btn-temporada:hover::before,
+#btn-guia:hover::before {
+  width: 100%;
+}
+
+box-icon {
+  width: 100%;
+}
+
+/* Conteúdo - Temporada */
+#background-temporada {
+  margin-left: 41%;
+  width: 780px;
+  position: relative;
+  top: -290px;
+  border-radius: 3px;
+}
+
+.temporada {
+  position: relative;
+  top: 370px;
+  margin-left: 20px;
+  z-index: 2;
+}
+
+.temporada h1 {
+  position: relative;
+  right: 6px;
+  float: left;
+  width: 100%;
+  font-size: 4em;
+  color: red;
+  margin-top: -100px;
+}
+
+.temporada p {
+  color: rgb(90, 89, 89);
+  width: 500px;
+  min-width: 50px;
+  font-family: "Raleway", sans-serif;
+}
+
+#btn-temporada {
+  position: relative;
+  top: -340px;
+  left: 81px;
+  float: left;
+  color: rgb(226, 226, 226);
+}
+
+/* Conteúdo - Trailer do jogo */
+.trailer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 210px;
+}
+
+#trailer-video {
+  position: relative;
+  top: 80px;
+  left: 280px;
+  width: 690px;
+  min-width: 90px;
+  z-index: 6;
+}
+
+#video-trailer {
+  position: relative;
+  top: -190px;
+  left: 12px;
+  width: 100%;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+#background-trailer {
+  margin-top: -700px;
+  width: 1370px;
+}
+
+.trailer h1 {
+  font-size: 4em;
+  color: red;
+  margin-right: 170px;
+  z-index: 2;
+}
+
+.trailer p {
+  color: rgb(90, 89, 89);
+  font-family: "Raleway", sans-serif;
+  width: 700px;
+  z-index: 2;
+  margin-left: 360px;
+  padding-bottom: 70px;
+}
+
+/* Botão play para iniciar o video - Trailer (Somente em mobile) */
+.botao-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 43%;
+  visibility: hidden;
+  z-index: 2;
+}
+
+.ele-wrap {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: auto;
+  background-color: rgba(255, 0, 0, 0.664);
+  color: #fff;
+  position: relative;
+  top: 300px;
+  border-radius: 50%;
+}
+
+.ele-wrap h2 {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 7%;
+  transform: translate(50%, 50%); /* que */
+}
+
+.ele-wrap::after,
+.ele-wrap::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100px;
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 50%;
+  animation: animate 1s infinite;
+}
+
+@keyframes animate {
+  0% {
+    width: 100px;
+    height: 100px;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+  }
+}
+
+/* Conteúdo - Guia para iniciantes */
+.jogueAgora img {
+  position: relative;
+  top: -400px;
+  left: 140px;
+  width: 1150px;
+  border-radius: 90px;
+}
+
+.jogueAgora h1,
+.jogueAgora p {
+  position: relative;
+  top: -200px;
+  left: 30px;
+}
+
+.jogueAgora h1 {
+  color: red;
+  font-size: 4rem;
+  padding-bottom: 15px;
+}
+
+.jogueAgora p {
+  color: rgb(90, 89, 89);
+  font-family: "Raleway";
+  width: 460px;
+  left: 37px;
+}
+
+#btn-guia {
+  position: relative;
+  top: 180px;
+  left: 260px;
+  color: black;
+  width: 230px;
+  z-index: 2;
+}
+
+.linha {
+  position: relative;
+  top: -500px;
+  right: 15px;
+  width: 1500px;
+  height: 150px;
+  background-color: red;
+  transform: rotate(-7deg);
+}
+
+/* Conteúdo - Notícias */
+.ultimas-noticias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -410px;
+}
+
+.ultimas-noticias h1 {
+  font-size: 4em;
+  color: rgb(255, 9, 9);
+  padding-bottom: 10px;
+}
+
+.ultimas-noticias p {
+  font-family: "Raleway", sans-serif;
+  color: rgb(90, 89, 89);
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 650px;
+  margin-top: 70px;
+  margin: auto;
+  height: 800px;
+  padding-bottom: 160px;
+  cursor: pointer;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  position: relative;
+  top: 10px;
+  box-shadow: 1px 1px 4px black;
+  background-color: rgba(255, 255, 255, 0.918);
+  border-radius: 10px;
+  margin-right: 20px;
+  height: 600px;
+  transition: 0.7s;
+}
+
+.card-1 img,
+.card-2 img,
+.card-3 img {
+  width: 400px;
+  margin-left: 0;
+  padding: 20px 0 20px 0;
+}
+
+.card-1 h1,
+.card-2 h1,
+.card-3 h1 {
+  font-size: 1.2em;
+  padding: 10px 10px 5px 0;
+  margin: 10px 0 0 10px;
+  font-family: "Raleway", sans-serif;
+}
+
+.card-1 p,
+.card-2 p,
+.card-3 p {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8em;
+  width: 360px;
+  padding-bottom: 25px;
+  margin: 0 auto;
+}
+
+#data-card-1,
+#data-card-2,
+#data-card-3 {
+  margin-left: 11px;
+  color: #8e121c;
+}
+
+/* Mobile - Opção para ver o restante das notícias */
+#ver-mais-noticias {
+  position: absolute;
+  top: 4280px;
+  left: 20px;
+  color: rgb(83, 83, 83);
+  transition: 0.6s;
+}
+
+#ver-mais-noticias i {
+  margin: 0;
+  padding-left: 0;
+  position: relative;
+  top: -2px;
+  color: rgb(255, 0, 0);
+  transition: 0.6s;
+  opacity: 0;
+}
+
+#ver-mais-noticias:hover #arrow {
+  padding-left: 20px;
+  opacity: 1;
+}
+
+#ver-mais-noticias:hover {
+  color: rgb(14, 0, 0);
+}
+
+#ver-mais-noticias:hover:before {
+  width: 100%;
+}
+
+/* Efeito de hover nos cards de noticias*/
+.card-1:hover,
+.card-2:hover,
+.card-3:hover {
+  position: relative;
+  top: 30px;
+}
+
+/* footer */
+footer {
+  padding-top: 40px;
+  background-color: black;
+  width: 100vw;
+}
+
+footer p {
+  font-family: "Raleway", sans-serif;
+  padding-top: 10px;
+  max-width: 500px;
+  margin: 10px auto;
+  font-size: 14px;
+  color: bisque;
+}
+
+.conteudo-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.conteudo-footer img {
+  width: 100px;
+}
+
+#apex-respawn {
+  padding-bottom: 25px;
+  width: 150px;
+}
+
+#apex-global-series {
+  width: 140px;
+  padding-bottom: 25px;
+}
+
+#apex-logo-2 {
+  width: 115px;
+}
+
+.logos-footer img {
+  padding-left: 30px;
+}
+
+#redes-sociais {
+  display: flex;
+  padding-bottom: 40px;
+}
+
+#redes-sociais li {
+  margin: 10px;
+}
+
+#redes-sociais ion-icon {
+  color: bisque;
+}
+
+.footer-direitos-autorais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

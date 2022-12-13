@@ -1,0 +1,541 @@
+/* Tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Oxygen:wght@300&family=Quicksand:wght@500&family=Raleway:wght@500&display=swap');
+
+@font-face {
+  font-family: "Apex";
+  src: url("../font/Apex Regular.otf");
+}
+
+/* body */
+* {
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Header */
+#logo-header {
+  width: 70px;
+  margin-top: 5px;
+  position: relative;
+  top: 5px;
+  padding-left: 11px;
+}
+
+#login {
+  color: blanchedalmond;
+  padding: 7px;
+  background-color: #8e121c;
+  width: 90px;
+  margin-right: 10px;
+  text-align: center;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+#sign-up {
+  color: blanchedalmond;
+  padding: 7px;
+  background-color: #426591;
+  width: 90px;
+  margin-right: 10px;
+  text-align: center;
+  transition: all 0.5s ease;
+  opacity: 0.7;
+}
+
+#sign-up:hover,
+#login:hover {
+  opacity: 1;
+}
+
+.signUp-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: -60px;
+}
+
+/* Home */
+.home video {
+  width: 100%;
+  filter: brightness(0.5);
+}
+
+#background-home {
+  display: none;
+  width: 1199px;
+  filter: brightness(0.5);
+}
+
+#logo-apex {
+  position: absolute;
+  top: 120px;
+  left: 50px;
+  float: left;
+  filter: hue-rotate(-500deg);
+  width: 320px;
+  z-index: 2;
+}
+
+/* Dados sobre a lenda Ash */
+.conteudo-nova-lenda {
+  margin-top: 630px;
+}
+
+#revenant-png {
+  width: 100%;
+  position: relative;
+  top: -701px;
+  right: 230px;
+  z-index: 2;
+  cursor: pointer;
+  /* filter: drop-shadow(15px 1px 1px rgb(31, 31, 31)) */
+}
+
+#revenant-png::before {
+  content: "";
+  position: absolute;
+  width: 781px;
+  top: -869px;
+  filter: sepia(100%);
+  opacity: 0;
+}
+
+#revenant-png:hover::before {
+  opacity: 0.7;
+  animation: glitch 1.5s infinite linear;
+}
+
+@keyframes glitch {
+  0% {
+    top: 0;
+    margin: 12px 0;
+  }
+  20% {
+    top: 80px;
+    margin: -10px -80px;
+  }
+  40% {
+    top: 160px;
+    margin: 6px -160px;
+  }
+  60% {
+    top: 240px;
+    margin: -6px -240px;
+  }
+  80% {
+    top: 0;
+    left: 15px;
+  }
+}
+
+.lenda-revenant img {
+  width: 1700px;
+  position: relative;
+  top: -70px;
+  z-index: -1;
+}
+
+.lenda-revenant h1 {
+  font-family: "Apex";
+  color: red;
+  font-size: 6em;
+  float: right;
+  margin-right: 40px;
+  letter-spacing: 0.7px;
+  margin-top: -1549px;
+}
+
+.lenda-revenant span {
+  color: rgb(0, 0, 0);
+}
+
+.lenda-revenant p {
+  position: relative;
+  top: -1400px;
+  left: 57%;
+}
+
+#historia-revenant {
+  padding-bottom: 20px;
+  color: black;
+  width: 500px;
+  margin-left: -130px;
+}
+
+#historia-revenant,
+.dados-revenant {
+  margin-top: 25px;
+}
+
+#frase-revenant {
+  margin: -10px 0 0 -130px;
+  padding: 0 0 10px 0;
+  font-family: "Raleway";
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+}
+
+.dados-revenant {
+  margin: 40px 0 0 -130px;
+}
+
+.dados-revenant h1 {
+  position: relative;
+  top: 180px;
+  right: 130px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.411);
+  padding: 0px 20px 12px 20px;
+  font-size: 3.9em;
+  transform: rotate(90deg);
+}
+
+.dados-revenant p {
+  font-family: "Apex";
+  letter-spacing: 0.7px;
+  color: rgb(128, 0, 0);
+}
+
+.dados-revenant span {
+  font-family: "Apex";
+  letter-spacing: 0.7px;
+  color: black;
+  opacity: 0.7;
+}
+
+/* Btn - Trailer & Saiba mais (Ash) */
+#btn-saiba-mais-revenant,
+#btn-trailer-revenant {
+  font-family: "Apex";
+  letter-spacing: 0.5px;
+  background-color: rgb(255, 0, 0);
+  z-index: 4;
+}
+
+.botoes-lenda {
+  display: flex;
+  position: relative;
+  right: 100px;
+  top: -1040px;
+}
+
+#btn-saiba-mais-revenant,
+#btn-trailer-revenant {
+  position: relative;
+  top: -300px;
+  font-family: "Apex";
+  letter-spacing: 0.5px;
+  margin: 0 auto;
+  background-color: rgba(255, 0, 0, 0.507);
+}
+
+#btn-trailer,
+#btn-novo-passe-de-batalha {
+  position: relative;
+  top: -300px;
+  font-family: "Apex";
+  letter-spacing: 0.5px;
+  margin: 0 auto;
+  background-color: rgba(94, 94, 94, 0.507);
+  clip-path: polygon(0% 16%, 100% 6%, 98% 100%, 2% 90%);
+}
+
+#btn-trailer:after,
+#btn-saiba-mais-revenant::after,
+#btn-novo-passe-de-batalha::after,
+#btn-saiba-mais-revenant::after,
+#btn-trailer-revenant::after {
+  /* studying */
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+
+  content: "Samurai";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #00e6f6 3%,
+    #00e6f6 5%,
+    red 5%
+  );
+  text-shadow: -3px -3px 0px yellow, 3px 3px 0px #00e6f6;
+  clip-path: var(--slice-0);
+}
+
+#btn-trailer:hover::after,
+#btn-saiba-mais-revenant:hover::after,
+#btn-novo-passe-de-batalha:hover::after,
+#btn-trailer-revenant:hover::after {
+  background-color: transparent;
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-1);
+    transform: translate(-5px, 0);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+#btn-trailer {
+  position: relative;
+  color: white;
+  border: 2px solid red;
+  transition: 1s all ease;
+  padding: 17px;
+  width: 160px;
+  text-align: center;
+}
+
+#btn-trailer::before,
+#btn-saiba-mais-revenant::before,
+#btn-novo-passe-de-batalha::before,
+#btn-trailer-revenant::before {
+  background: red;
+  content: ""; /* altera o texto já escrito */
+  position: absolute;
+  top: 50%; /* posiciona a cor hover dentro do botão*/
+  left: 50%;
+  transform: translate(-50%, -50%); /* FAz o efeito de transição */
+  z-index: -1; /*fica por baixo da letra */
+  transition: all 0.6s ease; /* efeito de transição */
+}
+
+#btn-trailer::before,
+#btn-saiba-mais-revenant::before,
+#btn-novo-passe-de-batalha::before,
+#btn-trailer-revenant:before {
+  width: 0%;
+  height: 100%;
+}
+
+#btn-trailer:hover::before,
+#btn-saiba-mais-revenant:hover::before,
+#btn-novo-passe-de-batalha:hover::before,
+#btn-trailer-revenant:hover::before {
+  width: 100%;
+}
+
+/* btn - saiba mais (ash) */
+#btn-saiba-mais-revenant,
+#btn-novo-passe-de-batalha,
+#btn-trailer-revenant {
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  margin: 100px 0 0 100px;
+}
+
+#btn-saiba-mais-revenant,
+#btn-novo-passe-de-batalha,
+#btn-trailer-revenant {
+  position: relative;
+  color: rgb(104, 104, 104);
+  border: 2px solid red;
+  transition: 1s all ease;
+  padding: 17px;
+  width: 160px;
+  text-align: center;
+}
+
+/* Mapa - desfiladeiro do rei */
+.conteudo-passe-de-batalha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.passe-de-batalha {
+  position: relative;
+  top: -1230px;
+  z-index: 2;
+}
+
+.passe-de-batalha h1 {
+  position: relative;
+  top: -718px;
+  font-family: "Apex";
+  font-size: 5em;
+  color: rgb(255, 255, 255);
+  width: 700px;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.671);
+}
+
+.passe-de-batalha span {
+  color: rgb(119, 0, 255);
+  mix-blend-mode: multiply;
+  text-shadow: none;
+}
+
+#introducao-novo-passe-de-batalha {
+  position: relative;
+  top: -725px;
+  color: rgba(0, 0, 0, 0.74);
+  background-color: rgba(255, 255, 255, 0.493);
+  border-radius: 9px;
+  padding: 17px;
+  width: 420px;
+  font-family: "Raleway", sans-serif;
+}
+
+#btn-novo-passe-de-batalha {
+  position: relative;
+  top: -760px;
+  left: 25px;
+}
+
+#background-passe {
+  margin-top: -5px;
+  position: relative;
+  right: 0px;
+  width: 100%;
+  opacity: 0.7;
+}
+
+/* Eventos */
+.eventos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -1810px;
+}
+
+#background-eventos {
+  position: absolute;
+  top: -76px;
+  width: 960px;
+  z-index: -1;
+  filter: grayscale(0.7);
+}
+
+/* Conteudo de texto - Eventos */
+#titulo-novos-eventos {
+  position: absolute;
+  top: 320px;
+  color: red;
+  font-family: "Apex";
+  font-size: 7em;
+}
+
+#titulo-evento-1 {
+  color: red;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 2.5em;
+  letter-spacing: 1.9px;
+}
+
+#background-loja
+{
+  width: 70%;
+  position: relative;
+  padding-bottom: 35px;
+  opacity: 0.9;
+}
+
+.conteudo-eventos h3
+{
+  font-family: 'Arvo', serif;
+  font-size: 1.2em;
+}
+
+.conteudo-eventos p {
+  position: relative;
+  top: -20px;
+  color: rgb(66, 66, 66);
+  width: 50%;
+  padding-bottom: 20px;
+}
+
+.conteudo-eventos a {
+  color: rgb(199, 48, 48);
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.conteudo-eventos a:hover {
+  color: red;
+  font-weight: bolder;
+}
+
+.conteudo-eventos p a {
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+}
+
+.conteudo-eventos h3 {
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 0.5px;
+  color: rgb(255, 0, 0);
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
+/* Conteúdo eventos - lado direito */
+.conteudo-eventos
+{
+  margin-top: 620px;
+  margin-left: 210px;
+  text-align: left;
+}

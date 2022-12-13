@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script type="text/javascript" src="js/navbarMobile.js"></script>
+    <script type="text/javascript" src="js/text.js"></script>
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="img/índice.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+      rel='stylesheet'>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apex Legends™ Mobile</title>
+  </head>
+  <body>
+    <header th:fragment="navbar">
+      <a id="logo-header" href="#"><img id="logo-header"
+          src="img/PngItem_833372.png" alt="logo"/></a>
+      <navbar>
+        <ul id="menu">
+          <li>Sobre<i id="arrow-navbar" class='bx bxs-down-arrow'></i>
+            <ul id="submenu">
+              <li><a href="#">Visão geral de jogabilidade</a></li>
+              <li><a href="#">Lendas</a></li>
+              <li><a href="#">Mapas</a></li>
+              <li><a href="#">Perguntas frequentes</a></li>
+              <li><a href="#">Créditos</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Temporada</a></li>
+          <li>Notícias e atualizações<i id="arrow-navbar" class='bx
+              bxs-down-arrow'></i>
+            <ul id="submenu">
+              <li><a href="#">Notícias</a></li>
+              <li><a href="#">Notas de Atualização</a></li>
+              <li><a href="#">Registro para Newsletter</a></li>
+            </ul>
+          </li>
+          <li>Comunidade<i id="arrow-navbar" class='bx bxs-down-arrow'></i>
+            <ul id="submenu">
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+          </li>
+        </ul>
+      </navbar>
+      <div class="signUp-login">
+        <span id="sign-up"> Sign up </span>
+        <span id="login"> login </span>
+      </div>
+    </header>
+    <img id="background-home" src="./img/background-home.png">
+    <div class="home">
+      <img src="img/Apex-logo.svg">
+      <p id="introducao-home">
+        Torne-se Lendas vivas em Apex Legends™ Mobile. Faça o download de
+        graça hoje*!
+      </p>
+      <p id="btn-baixar">Baixe agora!</p>
+    </div>
+
+    <div class="content">
+      <div class="temporada">
+        <h1 id="titulo-temporada"> Temporada </h1>
+        <p id="introducao-temporada"> Nessa temporada, temos uma nova Lenda,
+          novos eventos, atualizações de mapas, mudanças nos sistemas
+          principais,
+          balanceamento de
+          Lendas e armas, um novo passe de batalha e muito mais! Clique em saber
+          mais e descubra essas e mais novidades em Apex Legends™ Mobile! </p>
+        <img id="background-temporada" src="img/background-temporada.jpg">
+        <span id="btn-temporada"><a href="../pages/temporada.html" rel="next">Saiba
+            mais!</a></span>
+      </div>
+      <div class="sobre-o-jogo">
+        <div class="trailer">
+          <h1 id="titulo-trailer"> Trailer </h1>
+          <p id="introducao-trailer"> Escolha seu personagem. Monte seu
+            esquadrão.
+            Mostre para todo mundo do que as Lendas são feitas. </p>
+          <video id="trailer-video" controls>
+            <source id="video-trailer" src="../video/ApexLegendsMobile_UnderworldLaunchTrailer.mp4" type="video/mp4">
+          </video>
+          <div class="botao-play">
+            <div class="ele-wrap">
+              <h2> Play </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img id="background-trailer" src="./img/background-trailer.jpg">
+      <div class="jogueAgora">
+        <h1 id="titulo-guia">Torne-se uma lenda</h1>
+        <p id="introducao-guia"> O que está esperando para se tornar uma lenda
+          em Apex Legends
+          Mobile?! Não sabe como começar? Não se preocupe, seremos o seu guia,
+          nessa grande jornada!
+          <p id="btn-guia"> Começar a minha jornada! </p>
+        </p>
+        <img id="image-guia" src="img/crypto.png">
+        <div class="linha"></div>
+      </div>
+      <div class="ultimas-noticias">
+        <h1 id="titulo-noticias"> Últimas notícias </h1>
+        <p id="introducao-noticias"> Fiquem ligados nas novidades,
+          triunfantes!</p>
+      </div>
+      <div class="cards">
+        <div class="card-1">
+          <h1> Notas do patch Triunfantes do Apex Legends™ Mobile </h1>
+          <h3 id="data-card-1"> 12/10/2022</h3>
+          <a href="#"><img src="../img/card-1.jpg"></a>
+          <p> Saudações, Lendas, e boas-vindas à Temporada 3 de Apex Legends™
+            Mobile! Apertem os cintos e se preparem para a batalha com a maior
+            atualização de Apex Legends™ Mobile até agora. Nesta atualização,
+            temos uma nova Lenda juntando-se aos Jogos Apex, novos eventos,
+            mudanças nos sistemas principais, balanceamento de Lendas e armas
+            e muito mais. Quem
+            fizer logo a atualização mais recente vai receber Moedas da
+            Temporada e Pacotes do Consórcio extras!</p>
+        </div>
+        <div class="card-2">
+          <h1> Diário de Desenvolvimento das Ranqueadas do Apex Legends™
+            Mobile </h1>
+          <h3 id="data-card-2"> 11/10/2022</h3>
+          <a href="#"><img src="img/card-2.jpg"></a>
+          <p>A competição está no cerne da identidade e jeito de ser de Apex
+            Legends™. Acreditamos que construir um sistema ranqueado com base
+            na habilidade, adaptação e trabalho em equipe é a chave para
+            estabelecer a glória de uma vitória em Apex Legends™. O Battle
+            Royale que se destaca nesses elementos é sempre o mais divertido
+            de se jogar.
+            As Ranqueadas devem ser um desafio capaz de recompensar vocês
+            pelos seus esforços.</p>
+        </div>
+        <div class="card-3">
+          <h1> Notas de atualização pós-show de Apex Legends™ Mobile </h1>
+          <h3 id="data-card-3"> 03/10/2022</h3>
+          <a href="#"><img src="img/card-3.jpg"></a>
+          <p>
+            Todo mundo sabe que a diversão de verdade começa no Pós-show!
+            Nesta atualização, temos um novo passe de batalha, uma nova forma
+            de jogar Battle Royale, novos eventos, atualizações de mapa e do
+            nosso Sistema Ranqueado!
+            O Pós-show começa em 5 de outubro (UTC 0:00). Portanto, sem mais
+            delongas, vamos começar a festa!</p>
+        </div>
+      </div>
+      <a href="#biography-title"><p id="ver-mais-noticias">Ver mais notícias<i
+            class="fas fa-arrow-right" id="arrow"></i></p></a>
+      <footer>
+        <div class="conteudo-footer">
+          <div class="logos-footer">
+            <img src="img/Apex-logo.svg">
+            <img id="apex-global-series"
+              src="img/apex-global-series-footer-logo.svg">
+            <img id="apex-respawn" src="img/apex-respawn-white-logo.png">
+            <img id="apex-logo-2" src="img/apex-legends-logo-2.png">
+          </div>
+          <p> Siga-nos e receba as últimas atualizações em @playapexmobile
+          </p>
+          <ul id="redes-sociais">
+            <li><a href="https://twitter.com/PlayApex"><ion-icon
+                  name="logo-twitter"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/playapex/"><ion-icon
+                  name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://www.facebook.com/playapex"><ion-icon
+                  name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://www.youtube.com/playapex"><ion-icon
+                  name="logo-youtube"></ion-icon></a></li>
+            <li><a href="https://www.twitch.tv/playapex"><ion-icon
+                  name="logo-twitch"></ion-icon></a></li>
+          </ul>
+        </div>
+        <div class="footer-direitos-autorais">
+          <p> © 2022 Electronic Arts Inc. </p>
+        </div>
+      </footer>
+    </body>
+    <script type="text/javascript" src="js/ScrollReveal.js"></script>
+    <script type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </html>
